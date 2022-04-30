@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Emotion Detector</title>
+	<style>
+		h1{
+			text-align: center;
+		}
+
+		#submit{
+			background-color: black;
+			color: white;
+			padding: 10px 20px;
+		}
+
+		form{
+			text-align: center;
+		}
+		.formrow{
+			padding: 10px;
+		}
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<h1>Emotion Detector</h1>
+	<form action="/" method="POST" enctype="multipart/form-data">
+		<div class="formrow">
+			<label for="pic">Please submit your face picture:</label>
+			<input type="file" id="pic" name="pic">
+		</div>
+
+		<div class="formrow">
+			<input type="submit" value="Submit">
+		</div>
+
+	</form>
+
+
+</body>
+
+</html>
