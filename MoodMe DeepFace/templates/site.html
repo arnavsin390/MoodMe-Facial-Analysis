@@ -8,6 +8,10 @@
 			text-align: center;
 		}
 
+		p{
+			text-align: center;
+		}
+
 		#submit{
 			background-color: black;
 			color: white;
@@ -28,19 +32,23 @@
 
 <body>
 
-	<h1>Emotion Detector</h1>
-	<form action="/" method="POST" enctype="multipart/form-data">
-		<div class="formrow">
-			<label for="pic">Please submit your face picture:</label>
-			<input type="file" id="pic" name="pic">
-		</div>
+	<div>
+		<h1>Emotion Detector</h1>
+	</div>
 
-		<div class="formrow">
-			<input type="submit" value="Submit">
-		</div>
+	<div>
+		<form action="/" method="POST" enctype="multipart/form-data">
+			<div class="formrow">
+				<label for="pic">Please submit your face picture:</label>
+				<input type="file" id="pic" name="pic">
+			</div>
 
-	</form>
-
+			<div class="formrow">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+		<p>{{error}}</p>
+	</div>
 
 </body>
 
